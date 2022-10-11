@@ -1,14 +1,10 @@
 package com.grpc.server;
    import com.grpc.service.GreetServiceImpl;
    import com.grpc.service.UserServiceImpl;
-   import com.shopping.db.H2DatabaseConnection;
    import io.grpc.Server;
    import io.grpc.ServerBuilder;
 
-   import java.sql.Connection;
-   import java.sql.SQLException;
-
-public class UserServerImpl {
+public class BackendServerImpl {
 
     public static void main(String[] args) throws Exception{
         final int PORT = 9091;
@@ -16,6 +12,7 @@ public class UserServerImpl {
         // Create a new server to listen on port 9090
         Server server = ServerBuilder.forPort(PORT)
                 .addService(new UserServiceImpl())
+                .addService(new GreetServiceImpl())
                 .build()
                 .start();
 

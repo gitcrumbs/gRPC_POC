@@ -11,7 +11,7 @@ public class GreetServiceImpl extends GreetServiceGrpc.GreetServiceImplBase {
 
     @Override
     public void greet(GreetRequest request, StreamObserver<GreetResponse> responseObserver) {
-        System.out.println("You are in the greet method or the greet service");
+        System.out.println("You are in the greet service");
 
         // we get the greeting object from the request (as defined in the proto file)
         Greeting greeting = request.getGreeting();

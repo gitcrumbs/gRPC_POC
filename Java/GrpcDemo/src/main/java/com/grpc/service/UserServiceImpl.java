@@ -19,7 +19,7 @@ public class UserServiceImpl extends UserServiceGrpc.UserServiceImplBase {
     @Override
     public void getUserDetails(UserRequest request, StreamObserver<UserResponse> responseObserver) {
 
-
+        System.out.println("You are in the getUserDetails service");
         User user = userDao.getDetails(request.getUsername());
 
         UserResponse.Builder userresponsebuilder = UserResponse.newBuilder()
