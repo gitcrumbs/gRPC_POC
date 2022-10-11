@@ -18,8 +18,10 @@ com\user\stubs\greet\GreetResponse$1.class
 com\user\stubs\greet\GreetRequestOrBuilder.class
 com\shopping\stubs\user\UserServiceGrpc$3.class
 com\user\stubs\greet\GreetServiceGrpc$2.class
+com\grpc\server\UserServerImpl$1.class
 com\shopping\stubs\user\UserServiceGrpc$UserServiceBaseDescriptorSupplier.class
 com\user\stubs\greet\GreetServiceGrpc$GreetServiceMethodDescriptorSupplier.class
+com\grpc\service\UserServiceImpl.class
 com\shopping\stubs\user\UserRequest.class
 com\grpc\service\GreetServiceImpl.class
 com\shopping\stubs\user\UserRequestOrBuilder.class
@@ -44,6 +46,7 @@ com\shopping\stubs\user\User.class
 com\user\stubs\greet\Greeting.class
 com\shopping\stubs\user\UserServiceGrpc$UserServiceBlockingStub.class
 com\user\stubs\greet\GreetServiceGrpc$GreetServiceStub.class
+com\grpc\server\UserServerImpl.class
 com\shopping\stubs\user\UserServiceGrpc$1.class
 com\user\stubs\greet\GreetServiceGrpc$GreetServiceBaseDescriptorSupplier.class
 com\user\stubs\greet\GreetResponse.class

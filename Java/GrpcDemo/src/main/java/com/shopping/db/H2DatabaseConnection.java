@@ -34,9 +34,8 @@ public class H2DatabaseConnection {
         Connection connection = null;
         try {
             Class.forName("org.h2.Driver");
-            connection = DriverManager.getConnection(
-                    "jdbc:h2:mem:shoppingDb", "", "");
-
+            connection = DriverManager.getConnection("jdbc:h2:mem:shoppingDb", "", "");
+            logger.info("Connection Successful");
         } catch (Exception exception) {
             logger.log(Level.SEVERE, "Could not set up connection", exception);
         }

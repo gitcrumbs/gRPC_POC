@@ -19,7 +19,7 @@ public class ServerImpl {
         server.start();
 
         // Server threads are running in the background.
-        System.out.println("Server started...");
+        System.out.println("Server started on Port "+PORT);
         // Don't exit the main thread. Wait until server is terminated.
         server.awaitTermination();
     }
