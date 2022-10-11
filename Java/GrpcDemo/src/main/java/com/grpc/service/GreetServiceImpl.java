@@ -1,10 +1,11 @@
 package com.grpc.service;
 
+import com.user.stubs.greet.GreetRequest;
+import com.user.stubs.greet.GreetResponse;
+import com.user.stubs.greet.GreetServiceGrpc;
+import com.user.stubs.greet.Greeting;
 import io.grpc.stub.StreamObserver;
-import proto.greet.GreetRequest;
-import proto.greet.GreetResponse;
-import proto.greet.GreetServiceGrpc;
-import proto.greet.Greeting;
+
 
 public class GreetServiceImpl extends GreetServiceGrpc.GreetServiceImplBase {
 
@@ -24,4 +25,5 @@ public class GreetServiceImpl extends GreetServiceGrpc.GreetServiceImplBase {
         responseObserver.onNext(response);// send the response
         responseObserver.onCompleted();// complete the execution
     }
+
 }

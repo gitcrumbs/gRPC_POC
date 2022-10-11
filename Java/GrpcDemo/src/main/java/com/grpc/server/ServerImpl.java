@@ -12,6 +12,7 @@ public class ServerImpl {
         // Create a new server to listen on port 9090
         Server server = ServerBuilder.forPort(PORT)
                 .addService(new GreetServiceImpl())
+                //.addService(new UserServiceImpl())
                 .build();
 
         // Start the server
